@@ -1,0 +1,14 @@
+server:
+  port: 8001
+mybatis:
+  config-location: classpath:mybatis/mybatis-config.xml
+  type-aliases-package: com.wjj.springcloud.api.entity
+  mapper-locations: classpath:mybatis/mapper/**/*.xml
+spring:
+  application:
+    name: springcloud_provider
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssm?useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT&useSSL=false
+    username: root
+    password: 1234
