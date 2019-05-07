@@ -19,5 +19,5 @@ public class DeptProviderApplication {
         SpringApplication.run(DeptProviderApplication.class,args);
     }
 
-    //添加
+    //删除
 }
