@@ -19,4 +19,6 @@ public class DeptProviderApplication {
         SpringApplication.run(DeptProviderApplication.class,args);
     }
 
+    //github
+
 }
