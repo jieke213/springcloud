@@ -25,6 +25,7 @@
 		<module>springcloud_api</module>
 		<module>springcloud_provider</module>
 		<module>springcloud_consumer</module>
+		<module>springcloud_eureka</module>
 	</modules>
 
 	<dependencyManagement>
