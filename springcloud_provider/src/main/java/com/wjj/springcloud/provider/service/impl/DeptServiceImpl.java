@@ -34,5 +34,4 @@ public class DeptServiceImpl implements DeptService {
         return deptDao.findAll();
     }
 
-    //测试
 }
