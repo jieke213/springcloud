@@ -40,4 +40,10 @@ public class DeptConsumerController {
     public List<Dept> list(){
         return restTemplate.getForObject(BASE_URL+"/dept/list",List.class);
     }
+
+    @RequestMapping(value = "/consumer/dept/discovery")
+    @ResponseBody
+    public Object discovery(){
+        return restTemplate.getForObject(BASE_URL+"/dept/discovery",Object.class);
+    }
 }

@@ -26,6 +26,8 @@
 		<module>springcloud_provider</module>
 		<module>springcloud_consumer</module>
 		<module>springcloud_eureka</module>
+		<module>springcloud_eureka2</module>
+		<module>springcloud_eureka3</module>
 	</modules>
 
 	<dependencyManagement>
@@ -80,10 +82,26 @@
 
 
 	<build>
+		<finalName>springcloud</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<delimiters>
+						<delimit>$</delimit>
+					</delimiters>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>

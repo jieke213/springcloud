@@ -3,6 +3,7 @@ package com.wjj.springcloud.provider.controller;
 import com.wjj.springcloud.api.entity.Dept;
 import com.wjj.springcloud.provider.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,9 @@ public class DeptController {
     @Autowired
     private DeptService deptService;
 
+    @Autowired
+    private DiscoveryClient client;
+
     @RequestMapping(value = "/dept/add",method = RequestMethod.POST)
     @ResponseBody
     public boolean add(Dept dept){
@@ -40,6 +44,10 @@ public class DeptController {
         return deptService.list();
     }
 
-
+    @RequestMapping(value = "/dept/discovery",method = RequestMethod.GET)
+    @ResponseBody
+    public Object discovery(){
+        return this.client;
+    }
 
 }
