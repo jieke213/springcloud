@@ -33,4 +33,6 @@ public class DeptServiceImpl implements DeptService {
     public List<Dept> list() {
         return deptDao.findAll();
     }
+
+    //测试
 }
