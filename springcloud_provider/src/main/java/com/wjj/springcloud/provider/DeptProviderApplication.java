@@ -19,5 +19,4 @@ public class DeptProviderApplication {
         SpringApplication.run(DeptProviderApplication.class,args);
     }
 
-    //兔八哥
 }

@@ -18,7 +18,10 @@ import java.util.List;
 @Controller
 public class DeptConsumerController {
 
-    public static final String BASE_URL="http://localhost:8001";
+    //public static final String BASE_URL="http://localhost:8001";
+
+    //eureak和ribbon整合后，可以直接访问服务，不用再去访问IP+端口【切记：服务名不能有下划线,如：SPRINGCLOUD_PROVIDER】
+    public static final String BASE_URL="http://SPRINGCLOUDPROVIDER";
 
     @Autowired
     private RestTemplate restTemplate;
