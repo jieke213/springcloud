@@ -30,7 +30,8 @@
 		<module>springcloud_eureka3</module>
 		<module>springcloud_provider2</module>
 		<module>springcloud_provider3</module>
-	</modules>
+        <module>springcloud_consumer_feign</module>
+    </modules>
 
 	<dependencyManagement>
 		<dependencies>
