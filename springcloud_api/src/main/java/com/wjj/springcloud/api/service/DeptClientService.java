@@ -12,7 +12,8 @@ import java.util.List;
  * Date:     2019/5/8 15:47
  * Description:
  */
-@FeignClient(value = "SPRINGCLOUDPROVIDER")
+//@FeignClient(value = "SPRINGCLOUDPROVIDER")
+@FeignClient(value = "SPRINGCLOUDPROVIDER",fallbackFactory = DeptClientServiceFallbackFactory.class)
 public interface DeptClientService {
 
     @RequestMapping("/dept/add")
