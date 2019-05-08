@@ -28,6 +28,8 @@
 		<module>springcloud_eureka</module>
 		<module>springcloud_eureka2</module>
 		<module>springcloud_eureka3</module>
+		<module>springcloud_provider2</module>
+		<module>springcloud_provider3</module>
 	</modules>
 
 	<dependencyManagement>
