@@ -31,6 +31,7 @@
 		<module>springcloud_provider2</module>
 		<module>springcloud_provider3</module>
         <module>springcloud_consumer_feign</module>
+        <module>springcloud_provider_hystrix</module>
     </modules>
 
 	<dependencyManagement>
