@@ -1,6 +1,5 @@
 package com.wjj.springcloud.consumer;
 
-import com.wjj.springcloud.rule.MyRule;
 import com.wjj.springcloud.rule.SelfRule;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,9 +14,9 @@ import org.springframework.cloud.netflix.ribbon.RibbonClient;
 @SpringBootApplication
 @EnableEurekaClient
 @RibbonClient(name = "SPRINGCLOUDPROVIDER",configuration = SelfRule.class)
-public class DeptConsumerApplication {
+public class ConsumerApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeptConsumerApplication.class,args);
+        SpringApplication.run(ConsumerApplication.class,args);
     }
 }

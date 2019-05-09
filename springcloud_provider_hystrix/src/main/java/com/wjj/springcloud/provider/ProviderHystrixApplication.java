@@ -5,7 +5,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
-import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 
 /**
  * Author:   WangJingjie
@@ -16,10 +15,10 @@ import org.springframework.cloud.netflix.hystrix.EnableHystrix;
 @EnableEurekaClient
 @EnableDiscoveryClient
 @EnableCircuitBreaker
-public class DeptProviderHystrixApplication {
+public class ProviderHystrixApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeptProviderHystrixApplication.class,args);
+        SpringApplication.run(ProviderHystrixApplication.class,args);
     }
 
 }

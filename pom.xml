@@ -33,6 +33,7 @@
         <module>springcloud_consumer_feign</module>
         <module>springcloud_provider_hystrix</module>
         <module>springcloud_consumer_hystrix_dashboard</module>
+        <module>springcloud_zuul</module>
     </modules>
 
 	<dependencyManagement>

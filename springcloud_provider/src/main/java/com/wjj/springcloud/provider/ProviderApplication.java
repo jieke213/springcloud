@@ -1,4 +1,4 @@
-package com.wjj.springcloud.provider2;
+package com.wjj.springcloud.provider;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,10 +13,10 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableDiscoveryClient
-public class DeptProviderApplication2 {
+public class ProviderApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DeptProviderApplication2.class,args);
+        SpringApplication.run(ProviderApplication.class,args);
     }
 
 }
